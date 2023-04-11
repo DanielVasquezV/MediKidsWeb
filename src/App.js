@@ -19,7 +19,7 @@ import withSplashScreen from "./components/withSplashScreen";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Routes>
           <Route>
